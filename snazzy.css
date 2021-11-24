@@ -1,0 +1,244 @@
+*,body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style-type: none;
+    text-align: center;
+}
+.mayfly{
+    background-color: rgb(238, 235, 208);
+}
+.header{
+    display: flex;
+}
+#tab{
+    display: flex;
+    margin: 3rem 0 0;
+}
+ul > li{
+     display: grid;
+    place-content: center;
+    text-align: center;
+    font-size: 1rem;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color:rgb(247, 39, 136);
+    padding:0 50px;
+    border: solid 10px transparent ;
+    border-image: linear-gradient(rgb(247, 39, 136), rgb(107, 3, 121));
+    border-image-slice: 1;
+    margin-right: 5rem;
+    box-sizing: border-box;
+}
+ul > li:hover{
+    color: white;
+    background: linear-gradient(rgb(247, 39, 136), rgb(107, 3, 121));
+    cursor: pointer;
+}
+.logo{
+    margin-right: 100px;
+    padding: 30px;
+}
+.form{
+    text-align: center;
+}
+form > input{
+    padding:5px 70px;
+    margin-bottom: 2%;
+}
+button{
+    position: relative;
+    padding:7px 50px;
+    border-radius: 10px;
+    background-color: yellow;
+    font-weight: bolder;
+    border: none;
+    box-shadow: 0 8px 0 rgb(124, 124, 4);
+}
+button:hover{
+    cursor: pointer;
+    top: 3px;
+     box-shadow: 0 5
+     px 0 rgb(124, 124, 4);
+     color: white;
+      background-color: rgb(235, 235, 4);
+}
+.button{
+    position: relative;
+    background: linear-gradient(blue, purple);
+    color: white;
+}
+.button>span{
+    padding: 0 5px;
+}
+.slide{
+    position: absolute;
+    top: 0;
+    left: 42%;
+    background: linear-gradient(blue, purple);
+  width: 60px;
+  height: 30px;
+  border: 2px dotted;
+}
+.slide-switch{
+    left: 50%;
+}
+.video{
+    display: grid;
+    place-content: center;
+    margin: 0 auto;
+    width:900px;
+    border: 3px solid;
+    border-radius: 5px;
+    clip-path: polygon(50% 0, 20% 100%, 80% 100%);
+}
+
+.video video {
+    width: 100%;
+      aspect-ratio: 3/1;
+}
+.service{
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+}
+#content, #content2, #content3{
+    margin-left: 10%;
+    width: 100%;
+}
+
+.service .image {
+    width: 70px;
+}
+.service .image .curvy {
+    width: 50px;
+}
+
+.service .image img {
+    width: 100%;
+}
+.link{
+    margin-top: 0.7rem;
+}
+.link>a{
+    text-decoration: none;
+    color: purple;
+}
+.price{
+    width: 300px;
+    border: 2px dashed black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+p{
+    text-align: center;
+    padding: 0 30%;
+    line-height: 50px;
+    font-weight: bolder;
+}
+.price-btn{
+    padding:5px 15px;
+    margin: 5%;
+    border-radius: 10px;
+    background-color: yellow;
+    font-weight: bolder;
+}
+h1{
+    text-align: center;
+    margin-bottom: 20px;
+}
+h4{
+    display: grid;
+    place-content: center;
+    background-color: grey;
+    width: 100%;
+    text-align: center;
+    height: 50px;
+}
+.price-box{
+    display: flex;
+    justify-content: space-between;
+    width: 70%;
+    margin: 0 auto;
+}
+.footerlist li a{
+    text-decoration: none;
+    list-style-type: none;
+    color: rgb(96, 3, 184);
+    padding: 1em;
+    box-sizing: border-box;
+}
+.copyright{
+    padding: 1em;
+    box-sizing: border-box;
+}
+.footerlist, .copyright{ 
+display: flex;
+justify-content: flex-end;
+}
+.yelfooter{
+display: grid;
+vertical-align: middle;
+place-content: center;
+width: 70%;
+height: 5rem;
+margin:20px  auto;
+background-color: rgb(248, 238, 149);
+}
+
+@media (max-width:700px){
+.header{
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+    margin: 0 auto;
+}
+#tab{
+    display: flex;
+    margin: 0 auto 1rem;
+    flex-direction: column;
+    align-items: center;
+}
+.video{
+    display: grid;
+    place-content: center;
+    margin: 0 auto;
+    width: 500px;
+    border: 3px solid;
+    border-radius: 5px;
+    clip-path: polygon(50% 0, 20% 100%, 80% 100%);
+}
+
+.video video {
+    width: 100%;
+      aspect-ratio: 3/1;
+}
+ul li{
+    margin: 0 auto;
+}
+.logo{
+    margin: 1rem auto;
+    padding: 0;
+}
+.slide{
+    position: absolute;
+    top: 0;
+    left: 37%;
+    background: linear-gradient(blue, purple);
+  width: 60px;
+  height: 30px;
+  border: 2px dotted;
+}
+.slide-switch{
+    left: 50%;
+}
+.price-box{
+    flex-direction: column;
+    align-items: center;
+    width: 90vw;
+    margin: 0 auto;
+}
+.price{
+    margin-bottom: 1rem;
+}
+}
